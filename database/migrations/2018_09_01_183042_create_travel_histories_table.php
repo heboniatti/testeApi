@@ -17,7 +17,7 @@ class CreateTravelHistoriesTable extends Migration
             $table->increments('id');
             $table->integer('numero');
             $table->integer('serie');
-            $table->date('data_emissao');
+            $table->timestamp('data_emissao');
             $table->decimal('peso_saida', 10, 2);
             $table->decimal('peso_chegada', 10, 2)->nullable();
             $table->integer('cpf_cnpj_emitente');
